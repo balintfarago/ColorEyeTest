@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_id": "eyecolortest-6a8e6",
+    "project_number": "666510285185",
+    "name": "EyeColorTest"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666510285185:android:d03402c355eb843c",
+        "client_id": "android:com.b2creatived.coloreyetest",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.b2creatived.coloreyetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666510285185-sd5edulgequm0angmgf2b03aoaoil4e6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.b2creatived.coloreyetest",
+            "certificate_hash": "150AA011535D9ADCD8C8DFA9DEC59C2F29DB97CE"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-38319940-10"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

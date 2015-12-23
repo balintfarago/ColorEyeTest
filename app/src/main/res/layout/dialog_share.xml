@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:text="x"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_share1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Ads bothering you?"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tv_share2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Share the app or invite your friends to remove ads forever!"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_share_google"
+                android:background="@drawable/dialog_share_button_selector"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:text="SHARE ON GOOGLE+"
+                android:textColor="@drawable/share_button_text_selector"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/btn_share_facebook"
+                android:background="@drawable/dialog_share_button_selector"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="SHARE ON FACEBOOK"
+                android:textColor="@drawable/share_button_text_selector"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_share_email"
+                android:background="@drawable/dialog_share_button_selector"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:text="SHARE VIA EMAIL"
+                android:textColor="@drawable/share_button_text_selector"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/btn_share_sms"
+                android:background="@drawable/dialog_share_button_selector"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="SHARE VIA SMS"
+                android:textColor="@drawable/share_button_text_selector"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_invite"
+            android:background="@drawable/dialog_share_button_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="INVITE FRIENDS"
+            android:textColor="@drawable/share_button_text_selector"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_dontshow"
+            android:background="@drawable/dontshow_button_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="35dp"
+            android:text="Don't show this again"
+            android:textColor="@drawable/share_button_text_selector"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>

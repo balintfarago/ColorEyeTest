@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#486783">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#242B31">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:background="@drawable/dialog_backbutton_selector"
+            android:src="@mipmap/icon_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_home"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:text="Result"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_top">
+
+        <TextView
+            android:id="@+id/tv_result_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="Your time is"
+            android:textSize="22sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_ach_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_result_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="45:14.123"
+            android:textSize="48sp"
+            android:textColor="#FFFDC6"/>
+
+        <TextView
+            android:id="@+id/tv_result_3b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=" (+2)"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_result_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="That's a new record!"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/iv_flag"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/flag" />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_ach_unlocked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/achunlockedbg">
+
+        <TextView
+            android:id="@+id/tv_result_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Achievement unlocked!"
+            android:visibility="visible"
+            android:textSize="22sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="#FFFFFF"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/iv_star1"
+                android:visibility="gone"
+                android:background="@mipmap/star" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/iv_star2"
+                android:visibility="gone"
+                android:background="@mipmap/star" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/iv_star3"
+                android:visibility="gone"
+                android:background="@mipmap/star" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_again"
+        android:background="@drawable/splash_button_selector"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title"
+        android:text="PLAY AGAIN"
+        android:textColor="#486783"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_share_google"
+            android:background="@drawable/googleshare_button_selector"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:text="SHARE ON GOOGLE+"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_below="@+id/btn_again"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btn_share_facebook"
+            android:background="@drawable/facebook_button_selector"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="SHARE ON FACEBOOK"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_below="@+id/btn_again"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_share_email"
+        android:background="@drawable/share_button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="SHARE VIA EMAIL"
+        android:visibility="gone"
+        android:textColor="@drawable/share_button_text_selector"
+        android:textSize="18sp"
+        android:layout_below="@+id/btn_again"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_invite"
+        android:background="@drawable/google_button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="INVITE FRIENDS"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@+id/btn_again"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:src="@drawable/wood"
+        android:clipToPadding="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dialog_layout_main"
+        android:layout_alignBottom="@id/dialog_layout_main"
+        android:layout_alignLeft="@id/dialog_layout_main"
+        android:layout_alignRight="@id/dialog_layout_main" />
+
+<LinearLayout
+    android:id="@+id/dialog_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/wood">
+
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="You're getting better!"
+        android:textSize="24sp"
+        android:textColor="#486783"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:text="Do you know what would be even better?"
+        android:textSize="22sp"
+        android:textColor="#486783"/>
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Sign in with Google+ to save your progress in the cloud and compare your results against other players!"
+        android:textSize="20sp"
+        android:textColor="#486783"/>
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:background="@drawable/google_button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Sign in with Google+"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
+    </RelativeLayout>

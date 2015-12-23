@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadmore"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:padding="3dp"
+    android:layout_height="fill_parent">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvloadmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Loading.."/>
+
+</LinearLayout>

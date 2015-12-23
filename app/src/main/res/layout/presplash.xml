@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="#486783">
+
+    <View
+        android:id="@+id/v_1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:background="#41617C"/>
+
+    <View
+        android:id="@+id/v_2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@+id/v_1"
+        android:layout_alignBottom="@+id/v_1"
+        android:background="#476A88"/>
+
+    <View
+        android:id="@+id/v_3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/v_1"
+        android:layout_alignLeft="@+id/v_1"
+        android:background="#577289"/>
+
+
+    <View
+        android:id="@+id/v_4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="160dp"
+        android:background="#4F7392"/>
+    <View
+        android:id="@+id/v_5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/v_4"
+        android:background="#456887"/>
+    <View
+        android:id="@+id/v_6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/v_5"
+        android:background="#41617C"/>
+    <View
+        android:id="@+id/v_7"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_toLeftOf="@+id/v_5"
+        android:layout_alignBottom="@+id/v_5"
+        android:background="#53728E"/>
+    <View
+        android:id="@+id/v_8"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_toLeftOf="@+id/v_7"
+        android:layout_above="@+id/v_7"
+        android:background="#4D6C87"/>
+
+    <View
+        android:id="@+id/v_9"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:background="#51718C"/>
+    <View
+        android:id="@+id/v_10"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/v_9"
+        android:layout_toRightOf="@+id/v_9"
+        android:background="#40607C"/>
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_title"
+        android:layout_marginBottom="20dp"
+        android:background="@mipmap/icon"/>
+
+    <ImageView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:background="@mipmap/splash_title"/>
+
+
+    <!--<com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title"/>-->
+
+    <Button
+        android:id="@+id/btn_google"
+        android:background="@drawable/google_button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title"
+        android:text="Sign in with Google+"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:background="@drawable/splash_button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_google"
+        android:text="Play as Guest"
+        android:textColor="#486783"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+    android:id="@+id/btn_signout"
+    android:background="@drawable/splash_button_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="8dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/btn_next"
+        android:visibility="gone"
+    android:text="Sign out"
+    android:textColor="#486783"
+    android:textSize="18sp"
+    android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_whysignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/btn_next"
+        android:textSize="18sp"
+        android:text="Sign in with Google+ to save your results and compare them with other players'."/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

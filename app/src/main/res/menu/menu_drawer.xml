@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:icon="@mipmap/ic_achievements"
+            android:title="Achievements"/>
+        <item
+            android:id="@+id/navigation_item_2"
+            android:icon="@mipmap/ic_leaderboard"
+            android:title="Leaderboard"/>
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@mipmap/ic_terms"
+            android:title="Terms of Use"/>
+        <item
+            android:id="@+id/navigation_item_4"
+            android:icon="@mipmap/ic_rate"
+            android:title="Rate the Game"/>
+        <item
+            android:id="@+id/navigation_item_5"
+            android:icon="@mipmap/ic_email"
+            android:title="Report bugs and ideas"/>
+        <item
+            android:id="@+id/navigation_item_6"
+            android:icon="@mipmap/ic_invite"
+            android:title="Invite friends"/>
+        <item
+            android:id="@+id/navigation_item_7"
+            android:icon="@mipmap/ic_google5"
+            android:title="Sign out"/>
+
+    </group>
+</menu>

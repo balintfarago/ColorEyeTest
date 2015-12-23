@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">#171C20</item>
+    </style>
+
+    <style name="MyToolbarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--<item name="android:background">#FF0000</item>--> <!--toolbar title, button and menu background color, ridiculous-->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#242B31</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+
+    </style>
+
+
+    <style name="AppCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#125688</item> <!--action bar and tab background color-->
+        <item name="colorPrimaryDark">#171C20</item> <!--title bar background color-->
+       <!-- <item name="android:textColor">#FFFF00</item>--> <!--action bar title color-->
+       <!-- <item name="android:textColorPrimary">#CCCCCC</item>--> <!--tab content color. When you have a navigation drawer then the app will crash with Error inflating class message-->
+        <item name="colorAccent">#C9C9C9</item> <!--tab accent color-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorControlNormal">#FFFFFF</item> <!--hamburger icon color-->
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <color name="primary">#457C50</color>
+    <color name="primaryDarker">#580C0C</color>
+
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/up</item>
+        <item name="android:windowExitAnimation">@anim/down</item>
+    </style>
+
+<!--
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/up</item>
+        <item name="android:windowExitAnimation">@anim/down</item>
+    </style>
+
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+-->
+
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>
+    </style>
+
+    <style name="CustomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_bounce_back</item>
+    </style>
+
+
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+    <style name="MinusText">
+        <item name="android:paddingLeft">4px</item>
+        <item name="android:paddingBottom">4px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+</resources>

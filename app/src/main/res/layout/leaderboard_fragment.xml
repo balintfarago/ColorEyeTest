@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_leaderboard_1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#434343"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#283139"
+            android:id="@+id/rv" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/users_loading_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/users_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/leaderboard_loadingusers"
+            android:textColor="#1C1C1C" />
+    </LinearLayout>
+
+</RelativeLayout>
